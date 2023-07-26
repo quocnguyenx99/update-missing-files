@@ -1,0 +1,41 @@
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+.work-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  line-height: 1.2;
+}
+
+.work-contact__heading,
+.work-contact__link {
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+
+.work-contact__link {
+  color: var(--gray-darkness);
+  transition: color 2s;
+}
+
+.work-contact__link:hover {
+  color: var(--gray-lighten);
+}

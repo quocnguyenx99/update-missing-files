@@ -1,0 +1,47 @@
+.business {
+  padding-top: 3rem;
+
+  &__container {
+    border: 1px solid $border-color;
+    background-color: #fcfaf6;
+  }
+  &__card {
+    &-item {
+      margin-right: 1.5rem;
+      h3 {
+        margin-top: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-list {
+      position: relative;
+      .prev-arrow {
+        position: absolute;
+        top: -18%;
+        right: 8%;
+        font-size: 2rem;
+        color: $gray-color;
+        cursor: pointer;
+      }
+      .next-arrow {
+        position: absolute;
+        top: -18%;
+        right: 5%;
+        font-size: 2rem;
+        color: $gray-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+}

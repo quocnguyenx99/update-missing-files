@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+   <!-- Fontawesome -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body class="flex">
+    <div class="background-img" >
+        <img id="bg-image" src="./assets/bg-desktop-light.jpg" alt="mountain background">
+    </div>
+
+    <div id="theme-button"></div>
+
+    <div id="root" class="container">
+        <section class="todoapp">
+            <header id="header">
+                <div class="flex">
+                    <h1 class="header__title">todo</h1>
+                    <!-- <i id="theme-button" class="ri-moon-line"></i> -->
+                </div>
+            </header>
+            <div class="todo-wrapper">
+                <input class="new-todo" placeholder="Create a new todo..." autofocus>
+            </div>
+
+            <!-- This section should be hidden by default and shown when there are todos -->
+            <section class="main">
+                <input id="toggle-all" class="toggle-all" type="checkbox">
+                <label for="toggle-all">Mark all as complete</label>
+                <!-- These are here just to show the structure of the list items -->
+                <!-- List items should get the class `editing` when editing and `completed` when marked as completed -->
+                <ul class="todo-list">
+                    <li draggable="true" class="completed draggable" >
+                        <div class="view">
+                           <div class="check">
+                               <div class="check-mark">
+                                   <img src="./assets/icon-check.svg" alt="icon-check">
+                               </div>
+                               <div class="todo-text">
+                                    Buy a dog
+                                </div>
+                           </div>
+                           
+                            <button class="destroy">
+                                <i class="ri-close-line"></i>
+                            </button>
+                        </div>
+						<input class="edit" value="Create a TodoMVC template">
+                    </li>
+    
+                    <li draggable="true" class="draggable">
+                        <div class="view">
+                            <div class="check">
+                                <div class="check-mark">
+                                    <img src="./assets/icon-check.svg" alt="icon-check">
+                                </div>
+                                <div class="todo-text">
+                                    Buy a chisse
+                                </div>
+                            </div>
+                            
+                            <button class="destroy">
+                                <i class="ri-close-line"></i>
+                            </button>
+                        </div>
+						<input class="edit" value="Create a TodoMVC template">
+                    </li>
+                </ul>   
+            </section>
+            <!-- This footer should hidden by default and shown when there are todos -->
+            <footer class="footer">
+                <!-- This should be `0 items left` by default -->
+                <span class="todo-count"><strong>0</strong> item left</span>
+                <!-- Remove this if you don't implement routing -->
+                <ul class="filters">
+                    <li>
+                        <a class="selected" href="#/">All</a>
+                    </li>
+                    <li>
+                        <a href="#/active">Active</a>
+                    </li>
+                    <li>
+                        <a href="#/completed">Completed</a>
+                    </li>
+                </ul>
+                <!-- Hidden if no completed items are left ↓ -->
+                <button class="clear-completed">Clear completed</button>
+            </footer>
+        </section>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+    <script defer src="./js/index.js"></script>
+</body>
+</html>

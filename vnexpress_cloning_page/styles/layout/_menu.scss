@@ -1,0 +1,125 @@
+.nav-wrap-menu {
+  display: none;
+  transition: all 0.3s ease-in;
+  background-color: $light-gray-color;
+}
+
+.nav-wrap-menu.open-menu {
+  display: block;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid $border-color;
+  span {
+    font-family: $primary-font;
+    font-size: 1.8rem;
+    color: $tab-color;
+    font-weight: bold;
+  }
+}
+
+.close-menu {
+  font-size: 1.5rem;
+  color: #076db6;
+  i {
+    position: relative;
+    top: 3px;
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.content-left {
+  width: calc(100% - 16rem);
+  padding: 1.5rem 0;
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 3rem;
+    flex-wrap: wrap;
+    height: 393px;
+    overflow-y: scroll;
+  }
+}
+
+.content-item {
+  &:first-child {
+    a {
+      padding-top: 0;
+      font-size: 1.6rem;
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.content-link {
+  display: block;
+  padding: 7.5px;
+  color: $text-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.content-right {
+  padding-top: 1.2rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid $border-color;
+  &-list {
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid $border-color;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &-item {
+    margin-bottom: 2rem;
+    a {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $text-color;
+    }
+  }
+}
+
+.content-normal-item {
+  margin-bottom: 1.5rem;
+  a {
+    color: $text-color;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+  .content-right {
+    display: none;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+
+  .content-left-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,24 @@
+.scroll-up {
+  position: fixed;
+  background-color: #fff;
+  right: 2rem;
+  bottom: -305;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid $gray-color;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  opacity: 0.8;
+  transition: 0.4s;
+  cursor: pointer;
+  .scroll-up__icon {
+    color: $tab-color;
+    font-size: 2rem;
+  }
+}
+
+.show-scroll {
+  bottom: 3rem;
+}

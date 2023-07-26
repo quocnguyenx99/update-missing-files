@@ -1,0 +1,145 @@
+.project {
+  padding: 144px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    text-align: center;
+    h1 {
+      margin-bottom: 24px;
+      font-size: 32px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+
+  &__category {
+    padding: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 36px;
+  }
+
+  &__item {
+    border: 1px solid #e6ecf8;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 325px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid #e6ecf8;
+    }
+  }
+  &__desc {
+    margin-top: 24px;
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__type {
+    color: $primary-color;
+    font-weight: 500;
+  }
+
+  &__function,
+  &__tech {
+    line-height: 1.5;
+  }
+
+  span {
+    color: $primary-color;
+    font-weight: 500;
+  }
+
+  &__button {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    border: $primary-color;
+    transition: all ease-out 0.3s;
+    margin-bottom: 16px;
+    a {
+      color: $black-color;
+      font-weight: 500;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      a {
+        color: white;
+      }
+    }
+  }
+
+  &__seemore {
+    background-color: white;
+    border-color: $primary-color;
+    padding: 20px 32px;
+    border-radius: 999px;
+    margin-top: 24px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary-color;
+      font-size: 20px;
+      font-weight: 500;
+      i {
+        font-size: 30px;
+        margin-right: 6px;
+      }
+    }
+    &:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+}
+
+@media screen and (max-width: 1023px) {
+  .project {
+    padding: 120px 60px;
+  }
+
+  .project__category {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project {
+    padding: 100px 40px;
+  }
+  .project__category {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 48px;
+  }
+  .project__seemore {
+    margin-top: 12px;
+  }
+}

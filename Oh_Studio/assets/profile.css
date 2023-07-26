@@ -1,0 +1,82 @@
+.-no-row-gap {
+  row-gap: 0 !important;
+}
+/* About */
+.about {
+  padding: 140px 40px;
+}
+
+/* Experience */
+.experience__container {
+  width: 100%;
+  display: grid;
+  flex: 0 0 auto;
+  gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, 200px);
+  height: min-content;
+}
+.experience__item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  place-content: center flex-start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.experience__year,
+.experience__work-as {
+  color: var(--gray-darkness);
+}
+.experience__company {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Clients */
+
+.clients__container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, 200px);
+  grid-auto-rows: 200px;
+  height: min-content;
+  width: 100%;
+  gap: 10px;
+  padding: 40px;
+}
+
+.clinets-item {
+  place-self: center;
+  width: 100%;
+  aspect-ratio: 1.4375/1;
+  max-width: 180px;
+}
+.clients__image {
+  filter: invert(1);
+}
+
+.-image-filter {
+  filter: invert(0);
+}
+
+/* Cursor */
+.typed-cursor {
+  display: none;
+}
+
+/* Mobile  */
+@media only screen and (max-width: 739px) {
+  .products__item:nth-child(2) {
+    display: none;
+  }
+  .about {
+    padding: 60px 20px 20px 20px;
+  }
+
+  .experience__item {
+    padding: 0px;
+  }
+}

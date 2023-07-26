@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <!-- gg font -->
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- fontawseome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="nav" class="navbar">
+        <div class="container">
+            <!-- logo -->
+            <div class="navbar__brand">
+                <a href="#" >
+                    <img src="./image/logo.png" alt="logo" class="navbar__logo">
+                </a>
+            </div>
+            <!-- nav link-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__item-link">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#project" class="navbar__item-link">Project</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#footer" class="navbar__item-link">Contact</a>
+                </li>
+                <div id="nav__close" class="navbar__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </ul>
+            <div class="navbar__toggle">
+                <i class="fa-solid fa-bars "></i>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+    <section id="hero" class="hero">
+        <div class="containere">
+            <div class="hero-body">
+                <div class="hero__content">
+                    <!-- title -->
+                    <h1 >Study, Code & Practice</h1>
+                    <!-- subtitle -->
+                    <h2 >I design and code beautifully simple things, and I love what I do.</h2>
+                </div>
+                <!-- img -->
+                <img class="hero__image" src="./image/mf-avatar.svg" alt="avatar">
+            </div>
+            <div class="hero-foot">
+                <img src="./image/hero-devices.svg" alt="computer device">
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="about">
+        <div class="about__content">
+            <h1>About me</h1>
+        <p>
+            Good day, everyone! I'm Nguyen Hoang Quoc, I'm 23 years old and I'm from Vinh Long. I want to be Front-end Developer. I have six months experience working with web development.
+        </p>
+        <p>
+            I'm often praised for my creativity and independent working skills. I always put my heart and soul into every single website that I develop. I guess that's all I have to share about myself. Thank you for reading!
+        </p>
+        </div>
+    </section>
+    <!-- skill -->
+    <section class="skill">
+        <div class="skill__box">
+           <div class="skill__box-item">
+            <div class="skill__image">
+                <img src="./image/about-img1.png" alt="designer">
+            </div>
+            <div class="skill__start">
+                <h1 class="skill__name">Designer</h1>
+                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+            </div>
+            <div class="skill__body">
+                <p class="skill__title">Things I enjoy designing:</p>
+                <p class="skill__desc">UX, UI, Web, Apps, Logos</p>
+            </div>
+            <div class="skill__end">
+                <p class="skill__title">Design Tools:</p>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                </ul>
+            </div>
+           </div>
+           <div class="skill__box-item">
+            <div class="skill__image">
+                <img src="./image/about-img2.png" alt="Front-end">
+            </div>
+            <div class="skill__start">
+                <h1 class="skill__name">Frontend Developer</h1>
+                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            </div>
+            <div class="skill__body">
+                <p class="skill__title">Languages I speak:</p>
+                <p class="skill__desc">HTML, CSS, Javascript, React(Hooks), Sass, Git</p>
+            </div>
+            <div class="skill__end">
+                <p class="skill__title">Dev Tools:</p>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Bootstrap</li>
+                    <li>Terminal</li>
+                    <li>Github</li>
+                    <li>Vercel</li>
+                </ul>
+            </div>
+           </div>
+           <div class="skill__box-item">
+            <div class="skill__image">
+                <img src="./image/about-img3.png" alt="education">
+            </div>
+            <div class="skill__start">
+                <h1 class="skill__name">Experience</h1>
+                <p>I decided to pursue my passion to become a Frontend Developer after finishing my school program.</p>
+            </div>
+            <div class="skill__body">
+                <p class="skill__title">The university I attended:</p>
+                <p class="skill__desc">HCM University of Science</p>
+            </div>
+            <div class="skill__end">
+                <p class="skill__title">My major:</p>
+                <ul>
+                    <li>Computer and Embeded System</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </section>
+    <!-- project -->
+    <section id="project" class="project">
+        <div class="project__heading">
+            <h1 class="project__title">My Recent Work</h1>
+            <p class="project__subtitle">Here are a few past design projects I've worked on.</p>
+        </div>
+        <!-- category -->
+        <div class="project__category">
+            <div class="project__item">
+                <img src="./image/project-img2.png" alt="plant project">
+                <div class="project__desc">
+                    <h2 class="project__name">React Weather App</h2>
+                    <p class="project__type">Personal Project</p>
+                    <p class="project__team-size"><span> Team size: </span>1</p>
+                    <p class="project__tech"><span> Technologies: </span> HTML, CSS, JS, Reactjs Hook, Rest API, Luxon, Tailwin CSS</p>
+                    <p class="project__function"><span> Function such as: </span>call API, Search weather by City, Change units</p>
+                </div>
+                <button class="project__button">
+                    <a href="https://react-weather-app-three-liart.vercel.app/" target="_blank">View Demo</a>
+                </button>
+            </div>
+            <div class="project__item">
+                <img src="./image/project-img6.png" alt="plant project">
+                <div class="project__desc">
+                    <h2 class="project__name">React Todo App</h2>
+                    <p class="project__type">Personal Project</p>
+                    <p class="project__team-size"><span> Team size: </span>1</p>
+                    <p class="project__tech"><span> Technologies: </span> HTML, CSS, JS, Reactjs Hook</p>
+                    <p class="project__function"><span> Function such as: </span>Add todo, Update Todo, Delete todo, Filter active, </p>
+                </div>
+                <button class="project__button">
+                    <a href="https://react-todo-app-nine-sigma.vercel.app/" target="_blank">View Demo</a>
+                </button>
+            </div>
+            <div class="project__item">
+                <img src="./image/project-img1.png" alt="plant project">
+                <div class="project__desc">
+                    <h2 class="project__name">Responsive Plant Page</h2>
+                    <p class="project__type">Personal Project</p>
+                    <p class="project__team-size"><span> Team size: </span>1</p>
+                    <p class="project__tech"><span> Technologies: </span> HTML, CSS, JS, Responsive CSS</p>
+                    <p class="project__function"><span> Function such as: </span>Dark-light, Scroll-Reveal, Accordion menu</p>
+                </div>
+                <button class="project__button">
+                    <a href="https://responsive-plants-landingpage.vercel.app/" target="_blank">View Demo</a>
+                </button>
+            </div>
+            <div class="project__item">
+                <img src="./image/project-img3.png" alt="plant project">
+                <div class="project__desc">
+                    <h2 class="project__name">React Instagram Clone</h2>
+                    <p class="project__type">Personal Project</p>
+                    <p class="project__team-size"><span> Team size: </span>1</p>
+                    <p class="project__tech"><span> Technologies: </span> HTML, CSS, JS, Reactjs Hook, Firebase</p>
+                    <p class="project__function"><span> Function such as: </span>Sign In, Sign Up, Logout, Add post, Firebase Store, Comment post</p>
+                </div>
+                <button class="project__button">
+                    <a href="">View Demo</a>
+                </button>
+            </div>
+            <div class="project__item">
+                <img src="./image/project-img4.png" alt="plant project">
+                <div class="project__desc">
+                    <h2 class="project__name">Responsive vnExpress</h2>
+                    <p class="project__type">Personal Project</p>
+                    <p class="project__team-size"><span> Team size: </span>1</p>
+                    <p class="project__tech"><span> Technologies: </span> HTML, CSS, JS, Responsive CSS</p>
+                    <p class="project__function"><span> Function such as: </span>Video slide, Carousel slide, Menu pop-up, Responsive all device</p>
+                </div>
+                <button class="project__button">
+                    <a href="https://responsive-vnexpress-website.vercel.app/" target="_blank">View Demo</a>
+                </button>
+            </div>
+            <div class="project__item">
+                <img src="./image/project-img5.png" alt="plant project">
+                <div class="project__desc">
+                    <h2 class="project__name">Javascript Music App</h2>
+                    <p class="project__type">Personal Project</p>
+                    <p class="project__team-size"><span> Team size: </span>1</p>
+                    <p class="project__tech"><span> Technologies: </span> HTML, CSS, JS, Responsive CSS</p>
+                    <p class="project__function"><span> Function such as: </span>Add songs, Play, Pause, Next, Repeat, Random song, Animation</p>
+                </div>
+                <button class="project__button">
+                    <a href="https://music-player-js-swart.vercel.app/" target="_blank">View Demo</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- button  -->
+        <button class="project__seemore">
+            <a href="https://github.com/quocnguyenx99?tab=repositories" target="_blank"> <i class="fa-brands fa-github"></i> See more on Github</a>
+        </button>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <a href="#"><img src="./image/logo2.png" alt="logo"></a>
+        
+        <h1 class="footer__content">Living, learning, & leveling up one day at a time.</h1>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="footer__end">Made by Quoc Nguyen with 💖</p>
+    </footer>
+
+     <!-- Scroll up button -->
+     <a href="#nav" class="scrollup" id="scrollup">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="./script/app.js"></script>
+    <script src="./script/scrollreveal.min.js"></script>
+</body>
+</html>
